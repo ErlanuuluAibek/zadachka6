@@ -1,3 +1,3 @@
 public interface Hunt {
-    void hunt(Animal ... animals);
+    void hunt(Animal[]animals);
 }

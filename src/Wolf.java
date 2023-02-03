@@ -7,7 +7,7 @@ public class Wolf extends Animal implements Eat{
 
     @Override
     public void eat() {
-        System.out.println(getName()+" eating");
+        System.out.println(getName()+" eating "+rabbit);
     }
 
     @Override

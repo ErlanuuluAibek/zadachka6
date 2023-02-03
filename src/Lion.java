@@ -7,12 +7,12 @@ public class Lion extends Animal implements Hunt{
         this.rabbit=rabbit;
     }
     @Override
-    public void hunt(Animal ... animals) {
+    public void hunt(Animal[] animals) {
         for (int i = 0; i < animals.length; i++) {
-            if(animals.getClass().getName().equals("Wolf")){
-                System.out.println(getName()+" hunting "+wolf.getName());
-            }else if(animals.getClass().getName().equals("Rabbit")){
-                System.out.println(getName()+" hunting "+rabbit.getName());
+            if(animals[i].getClass().getName().equals("Wolf")){
+                System.out.println(getName()+" hunting "+wolf);
+            }else if(animals[i].getClass().getName().equals("Rabbit")){
+                System.out.println(getName()+" hunting "+rabbit);
             }else {
                 System.out.println(getName()+" hunting "+wolf+" "+rabbit);
                 i++;
